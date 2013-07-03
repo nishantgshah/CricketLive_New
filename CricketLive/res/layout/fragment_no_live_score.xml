@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background" >
+ <TextView
+        android:id="@+id/fragment_no_live_score_available"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/no_live_match"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+	
+    
+</RelativeLayout>

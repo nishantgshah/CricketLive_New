@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cricket Live</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="no_live_match">No Live Matches are going on</string>
+	
+    <string-array name="planets_array">
+        <item>Live Score</item>
+        <item>Recent Matches</item>
+        <item>Upcoming Series</item>
+        <item>All Matches</item>
+        <item>Teams</item>
+        <item>Ratings</item>
+    </string-array>
+
+    <!-- WebService Urls -->
+    
+    <string name="server_url">http://query.yahooapis.com/v1/public/yql</string>
+    <string name="ws_live_score_summary">select * from cricket.scorecard.live.summary</string>
+    <string name="ws_recent_matches">select * from cricket.scorecard.live.summary</string>
+    <!-- <string name="ws_commentary">select * from cricket.commentary(0,10) where match_id=184518 and innings_id=1</string> -->
+    <string name="ws_commentary">select * from cricket.commentary(%1$d,%2$d) where match_id=%3$d and innings_id=%4$d limit 5</string>
+    <string name="ws_recent_matches">select * from cricket.past_matches</string>
+    
+    <!-- <string name="live_score_summary"> select * from cricket.scorecard.summary where match_id=184509</string> -->
+
+    <string name="format">&amp;format=</string>
+    <string name="formatValue">json</string>
+    <string name="env">&amp;env=</string>
+    <string name="envValue">store://0TxIGQMQbObzvU4Apia0V0</string>
+
+</resources>
